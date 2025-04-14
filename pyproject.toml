@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69,<77", "wheel~=0.42", "setuptools_scm[toml]~=8.0"]
+requires = ["setuptools>=69,<79", "wheel~=0.42", "setuptools_scm[toml]~=8.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -19,11 +19,11 @@ classifiers = [
     'License :: OSI Approved :: Apache Software License',
     'Natural Language :: English',
     'Programming Language :: Python :: 3',
-    
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
     'Operating System :: OS Independent',
     'Topic :: Text Processing :: Markup :: XML'
 ]
@@ -36,11 +36,11 @@ arelle = [
     'arelle_release==2.*',
 ]
 dev = [
-    'flake8==7.1.2',
+    'flake8==7.2.0',
     'lxml-stubs==0.5.1',
     'mypy==1.15.0',
     'pytest==8.3.5',
-    'typing-extensions==4.12.2',
+    'typing-extensions==4.13.2',
 ]
 
 # https://setuptools.pypa.io/en/latest/userguide/entry_point.html#entry-points-for-plugins
@@ -69,7 +69,7 @@ write_to = "iXBRLViewerPlugin/_version.py"
 [tool.mypy]
 # Warn when a # type: ignore comment does not specify any error codes
 enable_error_code = "ignore-without-code"
-python_version = "3.12"
+python_version = "3.13"
 show_error_codes = true
 strict = true
 
